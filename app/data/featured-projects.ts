@@ -11,29 +11,32 @@ export type Project = {
 export const projects: Project[] = [
   {
     id: "project-1",
-    name: "FEATURED ONE",
+    name: "Web Messenger Integration",
     url: "/projects/project-1",
     homepageImage: "/images/project-1.png",
-    tags: ["Next JS", "API"],
-    shortDescription: "An awesome project using Next.js and an API.",
+    tags: ["Work", "APIs", "Preact", "Javascript"],
+    shortDescription:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim",
     githubUrl: "www.urlhere.com",
   },
   {
     id: "project-2",
-    name: "FEATURED TWO",
+    name: "Modern React & Preact Testing Library",
     url: "/projects/project-2",
-    homepageImage: "/images/project-2.png",
-    tags: ["React", "Tailwind"],
-    shortDescription: "A project made with React and Tailwind",
+    homepageImage: "/images/project-1.png",
+    tags: ["Work", "Testing Library", "Unit Tests"],
+    shortDescription:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad",
     githubUrl: "www.urlhere.com",
   },
   {
     id: "project-3",
-    name: "FEATURED 3",
+    name: "Hiking with Homer",
     url: "../../public/images/project-3.png",
     homepageImage: "/images/project-3.png",
-    tags: ["API"],
-    shortDescription: "An experimentation with APIs",
+    tags: ["Personal", "API", "Next JS", "App Router"],
+    shortDescription:
+      "Working with the Strava API to build a personal website to document all my hikes with my golden retreiver, Homer",
     githubUrl: "www.urlhere.com",
   },
 ];

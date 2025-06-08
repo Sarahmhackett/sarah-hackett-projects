@@ -16,7 +16,7 @@ export default function FeaturedCards() {
   return (
     <div className={styles.container}>
       <div className={styles.titleContainer}>
-        <h2>STUFF I'M EXTRA PROUD OF:</h2>
+        <h2 className={styles.h2}>FEATURED</h2>
         <a
           href="#"
           onClick={(e) => {

@@ -1,6 +1,7 @@
 
 .container {
     width: 100%;
+
 }
 
 .cardscontainer {
@@ -17,6 +18,11 @@
   display: flex;
   align-items: center;
 }
+
+.h2 {
+  color: black;
+}
+
 
 .titleContainer a {
  margin-left: 30px
@@ -100,7 +106,7 @@
 Pink/red ACOTAR: #e64451
 green Must and Fury: #229880
 blue Frost and Starlight: #1a9fd4
-orange Silverflames: f26c27
+orange Silverflames: #f26c27
 grey Silverflames: #6e6c6d
 purple Wings and Ruin: #cb528b
  */

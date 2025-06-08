@@ -13,7 +13,7 @@ export default function HomepageCards() {
 
   return (
     <div className={styles.container}>
-      <h2>ALL PROJECTS</h2>
+      <h2 className={styles.h2}>ALL PROJECTS</h2>
       <div className={styles.filterButtons}>
         <button
           className={styles.filterButtonAll}

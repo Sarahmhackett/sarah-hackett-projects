@@ -17,9 +17,11 @@ export default function Home() {
           Sarah Hackett
         </h1>
         <h2 className={styles.introText}>
-          👩🏼‍💻 💻 Software Engineer (2+ Years)
+          👩🏼‍💻 💻 Software Engineer @ Sky Betting and Gaming, Flutter UKI (2+
+          Years)
           <br />
-          📊 🧠 Former: Business Analyst and Marketing Manager (12+ Years)
+          📊 🧠 Former: Business Analyst and Marketing Manager @ Sky Betting &
+          Gaming, plus Agency experience (12+ Years)
           <br />
           🎓 🎨 Code First Girls Degree alum & BA Hons Graphic Design (Leeds
           Metropolitian University).
