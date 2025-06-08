@@ -1,19 +1,13 @@
-import Image from "next/image";
-import Link from "next/link";
+"use client";
 import styles from "./home.module.css";
+import HomepageCards from "./components/HomepageCards";
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      <h1>Welcome to My Blog</h1>
-      <ul>
-        <li>
-          <Link href="/projects/project-1">Blog Post TEST</Link>
-        </li>
-        <li>
-          <Link href="/projects/project-2">Blog Post 2</Link>
-        </li>
-      </ul>
+      <h1>Sarah Hackett</h1>
+
+      <HomepageCards />
     </main>
   );
 }
