@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { projects } from "../data/projects";
 import styles from "./HomepageCard.module.css";
 
@@ -12,7 +13,7 @@ export default function HomepageCards() {
 
   return (
     <div className={styles.container}>
-      <h2>Filter by Tag</h2>
+      <h2>Featured Projects</h2>
       <button onClick={() => setSelectedTag(null)}>All</button>
       <button onClick={() => setSelectedTag("React")}>React</button>
       <button onClick={() => setSelectedTag("Next JS")}>Next.js</button>
@@ -22,7 +23,26 @@ export default function HomepageCards() {
         {" "}
         {filteredProjects.map((project) => (
           <div key={project.id} className={styles.cards}>
-            {project.name} - <Link href={project.url}>Link</Link>
+            <div className={styles.imageWrapper}>
+              <Image
+                src={project.homepageImage}
+                alt={project.name}
+                fill
+                className={styles.projectImage}
+              />
+            </div>
+            <h2>{project.name}</h2>
+
+            <ul className={styles.tags}>
+              {project.tags.map((tag, index) => (
+                <li key={index}>{tag}</li>
+              ))}
+            </ul>
+
+            <p>{project.shortDescription}</p>
+            <p>
+              <Link href={project.url}>See More</Link>
+            </p>
           </div>
         ))}
       </div>

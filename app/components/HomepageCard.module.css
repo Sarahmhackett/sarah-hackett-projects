@@ -1,3 +1,4 @@
+
 .container {
     width: 100%;
 }
@@ -8,13 +9,56 @@
 }
 
 .cards {
-    width: 45%;
-    height: 200px;
+    width: 100%;
+    height: 400px;
     margin: 10px 20px 10px 0;
-    border: 1px solid #ddd;
     border-radius: 12px;
     padding: 1rem;
     background-color: rgb(243, 240, 240);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
     transition: transform 0.2s ease;
+    display: flex;
+    flex-direction: column;
   }
+
+  .imageWrapper {
+    position: relative;
+    width: 100%;
+    height: 500px; 
+  }
+  
+  .projectImage {
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .tags {
+    list-style: none;     
+    padding: 0;           
+    margin: 0;            
+    display: flex;        
+    gap: 0.5rem; 
+  }
+
+  .tags li {
+    background-color: rgba(255, 255, 255, 0.797);
+    border: 1px solid grey;
+    border-radius: 12px;
+    padding: 8px;
+  }
+
+  @media (min-width: 768px) {
+    .cards {
+        width: 25%;
+    }
+  }
+
+
+  /* 
+Pink/red ACOTAR: #e64451
+green Must and Fury: #229880
+blue Frost and Starlight: #1a9fd4
+orange Silverflames: f26c27
+grey Silverflames: #6e6c6d
+purple Wings and Ruin: #cb528b
+ */
