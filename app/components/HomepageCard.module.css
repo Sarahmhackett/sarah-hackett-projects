@@ -3,6 +3,45 @@
     width: 100%;
 }
 
+.filterButtons {
+  display: flex;
+}
+
+.filterButtons button {
+  background-color: white;
+  border: 1px solid grey;
+  padding: 1em;
+  margin-right: 10px;
+  width: 100px;
+}
+
+.filterButtons button:hover {
+  background-color: #f26c27;
+  border: 1px solid rgb(120, 120, 120);
+  
+}
+
+.filterButtons .filterButtonAll:hover {
+  background-color: #e64451;
+  border: 1px solid rgb(120, 120, 120);
+}
+
+.filterButtons .filterButtonReact:hover {
+  background-color: #229880;
+  border: 1px solid rgb(120, 120, 120);
+}
+
+.filterButtons .filterButtonNextJS:hover {
+  background-color: #cb528b;
+  border: 1px solid rgb(120, 120, 120);
+}
+
+.filterButtons .filterButtonAPI:hover {
+  background-color: #1a9fd4;
+  border: 1px solid rgb(120, 120, 120);
+}
+
+
 .cardscontainer {
     display: flex;
     flex-wrap: wrap;
@@ -14,8 +53,8 @@
     margin: 10px 20px 10px 0;
     border-radius: 12px;
     padding: 1rem;
-    background-color: #6e6c6d;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    background-color: #efebe9;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.354);
     transition: transform 0.2s ease;
     display: flex;
     flex-direction: column;

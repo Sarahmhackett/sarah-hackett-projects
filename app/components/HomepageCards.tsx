@@ -14,10 +14,38 @@ export default function HomepageCards() {
   return (
     <div className={styles.container}>
       <h2>ALL PROJECTS</h2>
-      <button onClick={() => setSelectedTag(null)}>All</button>
-      <button onClick={() => setSelectedTag("React")}>React</button>
-      <button onClick={() => setSelectedTag("Next JS")}>Next.js</button>
-      <button onClick={() => setSelectedTag("API")}>API</button>
+      <div className={styles.filterButtons}>
+        <button
+          className={styles.filterButtonAll}
+          onClick={() => setSelectedTag(null)}
+        >
+          All
+        </button>
+        <button
+          className={styles.filterButtonReact}
+          onClick={() => setSelectedTag("React")}
+        >
+          React
+        </button>
+        <button
+          className={styles.filterButtonNextJS}
+          onClick={() => setSelectedTag("Next JS")}
+        >
+          Next.js
+        </button>
+        <button
+          className={styles.filterButtonAPI}
+          onClick={() => setSelectedTag("API")}
+        >
+          API
+        </button>
+        <button
+          className={styles.filterButtonTBC}
+          onClick={() => setSelectedTag("TAG")}
+        >
+          TAG
+        </button>
+      </div>
 
       <div className={styles.cardscontainer}>
         {" "}

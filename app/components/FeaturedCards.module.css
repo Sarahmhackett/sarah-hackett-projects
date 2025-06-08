@@ -14,8 +14,8 @@
     margin: 10px 20px 10px 0;
     border-radius: 12px;
     padding: 1rem;
-    background-color: #f26c27;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    background-color: #efebe9;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.354);
     transition: transform 0.2s ease;
     display: flex;
     flex-direction: column;
