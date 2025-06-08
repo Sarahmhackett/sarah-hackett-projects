@@ -31,12 +31,12 @@ export const projects: Project[] = [
   },
   {
     id: "project-3",
-    name: "Hiking with Homer",
+    name: "Implementing Figma Design Systems",
     url: "../../public/images/project-3.png",
     homepageImage: "/images/project-3.png",
-    tags: ["Personal", "API", "Next JS", "App Router"],
+    tags: ["Work", "Figma", "CSS", "Design Systems"],
     shortDescription:
-      "Working with the Strava API to build a personal website to document all my hikes with my golden retreiver, Homer",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad",
     githubUrl: "www.urlhere.com",
   },
 ];
