@@ -11,11 +11,24 @@ export default function FeaturedCards() {
     ? projects.filter((project) => project.tags.includes(selectedTag))
     : projects;
 
+  const [isHidden, setIsHidden] = useState(false);
+
   return (
     <div className={styles.container}>
-      <h2>FEATURED PROJECTS</h2>
+      <div className={styles.titleContainer}>
+        <h2>FEATURED PROJECTS</h2>
+        <a
+          href="#"
+          onClick={(e) => {
+            e.preventDefault();
+            setIsHidden((prev) => !prev);
+          }}
+        >
+          {isHidden ? "▼ (show featured)" : "▲ (hide featured)"}
+        </a>
+      </div>
 
-      <div className={styles.cardscontainer}>
+      <div className={isHidden ? styles.hiddenElement : styles.cardscontainer}>
         {filteredProjects.map((project) => (
           <div key={project.id} className={styles.cards}>
             <div className={styles.imageWrapper}>
