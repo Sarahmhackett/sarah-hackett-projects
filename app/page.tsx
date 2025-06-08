@@ -6,8 +6,9 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <h1>Sarah Hackett</h1>
-
-      <HomepageCards />
+      <div className={styles.cardcontainer}>
+        <HomepageCards />
+      </div>
     </main>
   );
 }

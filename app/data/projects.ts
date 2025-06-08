@@ -24,4 +24,28 @@ export const projects: Project[] = [
     tags: ["React", "Tailwind"],
     shortDescription: "A personal portfolio made with React and Tailwind.",
   },
+  {
+    id: "project-3",
+    name: "React with Tailwind project",
+    url: "/projects/project-2",
+    homepageImage: "/images/project2.png",
+    tags: ["React", "Tailwind"],
+    shortDescription: "A personal portfolio made with React and Tailwind.",
+  },
+  {
+    id: "project-4",
+    name: "React with Tailwind project",
+    url: "/projects/project-2",
+    homepageImage: "/images/project2.png",
+    tags: ["React", "Tailwind"],
+    shortDescription: "A personal portfolio made with React and Tailwind.",
+  },
+  {
+    id: "project-5",
+    name: "React with Tailwind project",
+    url: "/projects/project-2",
+    homepageImage: "/images/project2.png",
+    tags: ["React", "Tailwind"],
+    shortDescription: "A personal portfolio made with React and Tailwind.",
+  },
 ];
