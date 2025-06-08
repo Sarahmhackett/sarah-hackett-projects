@@ -1,0 +1,25 @@
+.navigation {
+    display: flex;
+    height: 60px;
+    align-items:center;
+    padding-left: 1em
+}
+
+.navigation a {
+    color: black;
+    font-size: 16px;
+    margin-right: 10px;
+    padding: 1em;
+}
+
+.navigation .navHome:hover {
+    background-color: #e64451;
+}
+
+.navigation .navAbout:hover {
+    background-color: #229880;
+}
+
+.navigation .navContact:hover {
+    background-color: #cb528b;
+}

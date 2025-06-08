@@ -65,15 +65,28 @@
   .links {
     list-style: none;     
     padding: 0;           
-    margin: 0;            
+    margin: 0; 
+    margin-top: 10px;           
     display: flex;        
     gap: 0.5rem; 
+    
   }
 
-  .links li {
-    background-color: rgba(255, 255, 255, 0.797);
+  .links a {
+    color: black;
+    background-color: white;
     border: 1px solid grey;
-    padding: 8px;
+    padding: 0.5em;
+    margin-right: 10px;
+    width: 100px;
+  }
+
+  .links .seeMore:hover {
+    background-color: #e64451;
+  }
+
+  .links .gitHub:hover {
+    background-color: #229880;
   }
 
   @media (min-width: 768px) {

@@ -16,7 +16,7 @@ export default function FeaturedCards() {
   return (
     <div className={styles.container}>
       <div className={styles.titleContainer}>
-        <h2>FEATURED PROJECTS</h2>
+        <h2>STUFF I'M EXTRA PROUD OF:</h2>
         <a
           href="#"
           onClick={(e) => {
@@ -50,10 +50,14 @@ export default function FeaturedCards() {
             <p>{project.shortDescription}</p>
             <ul className={styles.links}>
               <li>
-                <Link href={project.url}>See More</Link>
+                <Link className={styles.seeMore} href={project.url}>
+                  See More
+                </Link>
               </li>
               <li>
-                <Link href={project.githubUrl}>github</Link>
+                <Link className={styles.gitHub} href={project.githubUrl}>
+                  github
+                </Link>
               </li>
             </ul>
           </div>

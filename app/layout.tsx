@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import styles from "./layout.module.css";
 import Link from "next/link";
 
 import "./styles/globals.css";
@@ -16,14 +17,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <nav>
-          <Link href="/" style={{ marginRight: "1rem" }}>
+        <nav className={styles.navigation}>
+          <Link className={styles.navHome} href="/">
             Home
           </Link>
-          <Link href="/about" style={{ marginRight: "1rem" }}>
+          <Link className={styles.navAbout} href="/about">
             About
           </Link>
-          <Link href="/contact/say-hello">Contact</Link>
+          <Link className={styles.navContact} href="/contact/say-hello">
+            Contact
+          </Link>
         </nav>
         {children}
       </body>

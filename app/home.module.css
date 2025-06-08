@@ -1,3 +1,30 @@
 .main {
-    padding: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
   }
+
+.heading {
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  width: inherit;
+  font-size: 80px;
+  margin: 0;
+  margin-bottom: 30px;
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: #229880;
+  text-decoration-thickness: 5px;
+  text-underline-offset: 14px;
+
+
+}
+
+.introText {
+  margin-left: 50px;
+  padding-bottom: 20px;
+  font-size: 14px;
+}
