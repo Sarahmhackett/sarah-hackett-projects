@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { projects } from "../data/projects";
-import styles from "./HomepageCard.module.css";
+import { projects } from "../data/featured-projects";
+import styles from "./FeaturedCards.module.css";
 
-export default function HomepageCards() {
+export default function FeaturedCards() {
   const [selectedTag, setSelectedTag] = useState<string | null>(null);
 
   const filteredProjects = selectedTag
@@ -13,11 +13,7 @@ export default function HomepageCards() {
 
   return (
     <div className={styles.container}>
-      <h2>ALL PROJECTS</h2>
-      <button onClick={() => setSelectedTag(null)}>All</button>
-      <button onClick={() => setSelectedTag("React")}>React</button>
-      <button onClick={() => setSelectedTag("Next JS")}>Next.js</button>
-      <button onClick={() => setSelectedTag("API")}>API</button>
+      <h2>FEATURED PROJECTS</h2>
 
       <div className={styles.cardscontainer}>
         {" "}

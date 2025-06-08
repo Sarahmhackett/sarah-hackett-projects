@@ -14,7 +14,7 @@
     margin: 10px 20px 10px 0;
     border-radius: 12px;
     padding: 1rem;
-    background-color: #6e6c6d;
+    background-color: #f26c27;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
     transition: transform 0.2s ease;
     display: flex;
@@ -49,7 +49,7 @@
 
   @media (min-width: 768px) {
     .cards {
-        width: 21%;
+        width: 29%;
     }
   }
 
@@ -58,7 +58,7 @@
 Pink/red ACOTAR: #e64451
 green Must and Fury: #229880
 blue Frost and Starlight: #1a9fd4
-orange Silverflames: #f26c27
+orange Silverflames: f26c27
 grey Silverflames: #6e6c6d
 purple Wings and Ruin: #cb528b
  */

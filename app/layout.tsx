@@ -16,9 +16,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <nav style={{ padding: "1rem", background: "#eee" }}>
+        <nav>
           <Link href="/" style={{ marginRight: "1rem" }}>
             Home
+          </Link>
+          <Link href="/about" style={{ marginRight: "1rem" }}>
+            About
           </Link>
           <Link href="/contact/say-hello">Contact</Link>
         </nav>
