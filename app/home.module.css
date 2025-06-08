@@ -10,8 +10,8 @@
 }
 
 .title {
-  width: inherit;
-  font-size: 80px;
+  /* width: 60%; */
+  font-size: 70px;
   margin: 0;
   margin-top: 10px;
   margin-bottom: 30px;
@@ -21,11 +21,20 @@
   text-decoration-thickness: 5px;
   text-underline-offset: 14px;
 
-
 }
 
 .introText {
-  margin-left: 50px;
+  margin-left: 80px;  
   padding-bottom: 20px;
   font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 50px; 
+  }
+
+  .introText {
+    display: none;
+  }
 }
