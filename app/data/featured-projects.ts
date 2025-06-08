@@ -5,6 +5,7 @@ export type Project = {
   homepageImage: string;
   tags: string[];
   shortDescription: string;
+  githubUrl: string;
 };
 
 export const projects: Project[] = [
@@ -15,6 +16,7 @@ export const projects: Project[] = [
     homepageImage: "/images/project-1.png",
     tags: ["Next JS", "API"],
     shortDescription: "An awesome project using Next.js and an API.",
+    githubUrl: "www.urlhere.com",
   },
   {
     id: "project-2",
@@ -23,6 +25,7 @@ export const projects: Project[] = [
     homepageImage: "/images/project-2.png",
     tags: ["React", "Tailwind"],
     shortDescription: "A project made with React and Tailwind",
+    githubUrl: "www.urlhere.com",
   },
   {
     id: "project-3",
@@ -31,5 +34,6 @@ export const projects: Project[] = [
     homepageImage: "/images/project-3.png",
     tags: ["API"],
     shortDescription: "An experimentation with APIs",
+    githubUrl: "www.urlhere.com",
   },
 ];

@@ -16,7 +16,6 @@ export default function FeaturedCards() {
       <h2>FEATURED PROJECTS</h2>
 
       <div className={styles.cardscontainer}>
-        {" "}
         {filteredProjects.map((project) => (
           <div key={project.id} className={styles.cards}>
             <div className={styles.imageWrapper}>
@@ -36,9 +35,14 @@ export default function FeaturedCards() {
             </ul>
 
             <p>{project.shortDescription}</p>
-            <p>
-              <Link href={project.url}>See More</Link>
-            </p>
+            <ul className={styles.links}>
+              <li>
+                <Link href={project.url}>See More</Link>
+              </li>
+              <li>
+                <Link href={project.githubUrl}>github</Link>
+              </li>
+            </ul>
           </div>
         ))}
       </div>
