@@ -8,7 +8,7 @@ export default function Home() {
       <h1>Welcome to My Blog</h1>
       <ul>
         <li>
-          <Link href="/projects/project-1">Blog Post 1</Link>
+          <Link href="/projects/project-1">Blog Post TEST</Link>
         </li>
         <li>
           <Link href="/projects/project-2">Blog Post 2</Link>
