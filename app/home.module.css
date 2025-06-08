@@ -13,9 +13,10 @@
   width: inherit;
   font-size: 80px;
   margin: 0;
+  margin-top: 10px;
   margin-bottom: 30px;
   text-decoration: underline;
-  text-decoration-style: wavy;
+  text-decoration: overline underline wavy;
   text-decoration-color: #229880;
   text-decoration-thickness: 5px;
   text-underline-offset: 14px;
