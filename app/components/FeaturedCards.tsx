@@ -39,7 +39,7 @@ export default function FeaturedCards() {
                 className={styles.projectImage}
               />
             </div>
-            <h2>{project.name}</h2>
+            <h2 className={styles.projectName}>{project.name}</h2>
 
             <ul className={styles.tags}>
               {project.tags.map((tag, index) => (
@@ -47,7 +47,9 @@ export default function FeaturedCards() {
               ))}
             </ul>
 
-            <p>{project.shortDescription}</p>
+            <p className={styles.projectDescription}>
+              {project.shortDescription}
+            </p>
             <ul className={styles.links}>
               <li>
                 <Link className={styles.seeMore} href={project.url}>
