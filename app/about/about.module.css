@@ -1,0 +1,66 @@
+.titleContainer {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 20px 0;
+}
+
+.title {
+    font-size: 120px;
+    margin: 0;
+    text-decoration: underline;
+    text-decoration: overline underline wavy;
+    text-decoration-color: #cb528b; 
+    text-decoration-thickness: 5px;
+    text-underline-offset: 14px;
+}
+
+.introZone {
+    width: 100%;
+    height: 300px; 
+    background-color:#cb528b;
+    display: flex;
+}
+
+.imageContainer {
+    width: 50%;
+    height: 100%;
+    background-color:rgba(255, 255, 255, 0.416);
+}
+
+.textContainer {
+    width: 50%;
+    height: 100%;
+    background-color:rgba(255, 255, 255, 0.277);
+}
+
+.timelineContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px 0 20px 0;
+}
+
+.timelineTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 36px;
+    margin: 0;
+    margin-bottom: 40px;
+    text-decoration: underline;
+    text-decoration: underline wavy;
+    text-decoration-color: #229880; 
+    text-decoration-thickness: 5px;
+    text-underline-offset: 14px;
+
+}
+
+
+/* 
+Pink/red ACOTAR: #e64451
+green Must and Fury: #229880
+blue Frost and Starlight: #1a9fd4
+orange Silverflames: #f26c27
+grey Silverflames: #6e6c6d
+purple Wings and Ruin: #cb528b
+ */
