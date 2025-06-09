@@ -17,7 +17,7 @@ export const projects: Project[] = [
     tags: ["Work", "APIs", "Preact", "Javascript"],
     shortDescription:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim",
-    githubUrl: "www.urlhere.com",
+    githubUrl: "",
   },
   {
     id: "project-2",

@@ -14,7 +14,7 @@ export const projects: Project[] = [
     name: "Next JS with API project",
     url: "/projects/project-1",
     homepageImage: "/images/project-1.png",
-    tags: ["Next JS", "API", "TAG"],
+    tags: ["Next JS", "API", "Work"],
     shortDescription: "An awesome project using Next.js and an API.",
     githubUrl: "www.urlhere.com",
   },

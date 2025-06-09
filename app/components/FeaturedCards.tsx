@@ -55,7 +55,12 @@ export default function FeaturedCards() {
                 </Link>
               </li>
               <li>
-                <Link className={styles.gitHub} href={project.githubUrl}>
+                <Link
+                  className={
+                    project.githubUrl ? styles.gitHub : styles.nogitHubUrl
+                  }
+                  href={project.githubUrl}
+                >
                   github
                 </Link>
               </li>

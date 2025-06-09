@@ -91,6 +91,10 @@
     background-color: #e64451;
   }
 
+  .links .nogitHubUrl {
+    display: none;
+  }
+
   .links .gitHub:hover {
     background-color: #229880;
   }
