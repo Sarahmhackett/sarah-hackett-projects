@@ -21,7 +21,7 @@ export const projects: Project[] = [
   },
   {
     id: "project-2",
-    name: "Modern React & Preact Testing Library",
+    name: "React Testing Library",
     url: "/projects/project-2",
     homepageImage: "/images/project-1.png",
     tags: ["Work", "Testing Library", "Unit Tests"],
@@ -31,7 +31,7 @@ export const projects: Project[] = [
   },
   {
     id: "project-3",
-    name: "Implementing Figma Design Systems",
+    name: "Figma Design Systems",
     url: "../../public/images/project-3.png",
     homepageImage: "/images/project-3.png",
     tags: ["Work", "Figma", "CSS", "Design Systems"],

@@ -1,8 +1,9 @@
 .navigation {
     display: flex;
-    height: 60px;
     align-items:center;
-    padding-left: 1em
+    justify-content: center;
+    height: 60px;
+    margin: 8px;
 }
 
 .navigation a {

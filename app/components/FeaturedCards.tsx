@@ -3,6 +3,9 @@ import Link from "next/link";
 import Image from "next/image";
 import { projects } from "../data/featured-projects";
 import styles from "./FeaturedCards.module.css";
+import { FaChevronDown, FaChevronUp } from "react-icons/fa";
+import { TiLeaf } from "react-icons/ti";
+import { VscGithub } from "react-icons/vsc";
 
 export default function FeaturedCards() {
   const [selectedTag, setSelectedTag] = useState<string | null>(null);
@@ -24,7 +27,15 @@ export default function FeaturedCards() {
             setIsHidden((prev) => !prev);
           }}
         >
-          {isHidden ? "▼ (show featured)" : "▲ (hide featured)"}
+          <>
+            {isHidden ? "Show featured " : "Hide featured "}
+            {"  "}
+            {isHidden ? (
+              <FaChevronUp style={{ marginLeft: "6px" }} />
+            ) : (
+              <FaChevronDown style={{ marginLeft: "6px" }} />
+            )}
+          </>
         </a>
       </div>
 
@@ -53,6 +64,7 @@ export default function FeaturedCards() {
             <ul className={styles.links}>
               <li>
                 <Link className={styles.seeMore} href={project.url}>
+                  <TiLeaf style={{ marginRight: "6px" }} size={20} />
                   See More
                 </Link>
               </li>
@@ -63,7 +75,8 @@ export default function FeaturedCards() {
                   }
                   href={project.githubUrl}
                 >
-                  github
+                  <VscGithub style={{ marginRight: "6px" }} size={20} />
+                  GitHub
                 </Link>
               </li>
             </ul>
