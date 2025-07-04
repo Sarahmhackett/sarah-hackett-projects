@@ -11,12 +11,12 @@ export type Project = {
 export const projects: Project[] = [
   {
     id: "project-1",
-    name: "Next JS with API project",
+    name: "Next.js with API project",
     url: "/projects/project-1",
     homepageImage: "/images/project-1.png",
-    tags: ["Next JS", "API", "Work"],
+    tags: ["Next.js", "API", "Work"],
     shortDescription: "An awesome project using Next.js and an API.",
-    githubUrl: "www.urlhere.com",
+    githubUrl: "",
   },
   {
     id: "project-2",

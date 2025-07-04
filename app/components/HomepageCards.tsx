@@ -3,6 +3,11 @@ import Link from "next/link";
 import Image from "next/image";
 import { projects } from "../data/projects";
 import styles from "./HomepageCard.module.css";
+import { RiNextjsFill } from "react-icons/ri";
+import { FaReact } from "react-icons/fa";
+import { PiPlugsConnectedBold } from "react-icons/pi";
+import { TiLeaf } from "react-icons/ti";
+import { VscGithub } from "react-icons/vsc";
 
 export default function HomepageCards() {
   const [selectedTag, setSelectedTag] = useState<string | null>(null);
@@ -13,38 +18,43 @@ export default function HomepageCards() {
 
   return (
     <div className={styles.container}>
-      <h2 className={styles.h2}>ALL PROJECTS</h2>
-      <div className={styles.filterButtons}>
-        <button
-          className={styles.filterButtonAll}
-          onClick={() => setSelectedTag(null)}
-        >
-          All
-        </button>
-        <button
-          className={styles.filterButtonReact}
-          onClick={() => setSelectedTag("React")}
-        >
-          React
-        </button>
-        <button
-          className={styles.filterButtonNextJS}
-          onClick={() => setSelectedTag("Next JS")}
-        >
-          Next.js
-        </button>
-        <button
-          className={styles.filterButtonAPI}
-          onClick={() => setSelectedTag("API")}
-        >
-          API
-        </button>
-        <button
-          className={styles.filterButtonTBC}
-          onClick={() => setSelectedTag("TAG")}
-        >
-          TAG
-        </button>
+      <div className={styles.titleContainer}>
+        <h2 className={styles.h2}>ALL PROJECTS</h2>
+        <div className={styles.filterButtons}>
+          <button
+            className={styles.filterButtonAll}
+            onClick={() => setSelectedTag(null)}
+          >
+            See All
+          </button>
+          <button
+            className={styles.filterButtonReact}
+            onClick={() => setSelectedTag("React")}
+          >
+            <FaReact style={{ marginRight: "8px" }} size={20} />
+            React
+          </button>
+          <button
+            className={styles.filterButtonNextJS}
+            onClick={() => setSelectedTag("Next.js")}
+          >
+            <RiNextjsFill style={{ marginRight: "8px" }} size={20} />
+            Next.js
+          </button>
+          <button
+            className={styles.filterButtonAPI}
+            onClick={() => setSelectedTag("API")}
+          >
+            <PiPlugsConnectedBold style={{ marginRight: "8px" }} size={20} />
+            API
+          </button>
+          <button
+            className={styles.filterButtonTBC}
+            onClick={() => setSelectedTag("TAG")}
+          >
+            TAG
+          </button>
+        </div>
       </div>
 
       <div className={styles.cardscontainer}>
@@ -70,10 +80,21 @@ export default function HomepageCards() {
             <p>{project.shortDescription}</p>
             <ul className={styles.links}>
               <li>
-                <Link href={project.url}>See More</Link>
+                <Link className={styles.seeMore} href={project.url}>
+                  <TiLeaf style={{ marginRight: "6px" }} size={20} />
+                  See More
+                </Link>
               </li>
               <li>
-                <Link href={project.githubUrl}>github</Link>
+                <Link
+                  className={
+                    project.githubUrl ? styles.gitHub : styles.nogitHubUrl
+                  }
+                  href={project.githubUrl}
+                >
+                  <VscGithub style={{ marginRight: "6px" }} size={20} />
+                  GitHub
+                </Link>
               </li>
             </ul>
           </div>

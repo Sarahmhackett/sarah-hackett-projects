@@ -5,8 +5,13 @@
     padding-top: 20px;
 }
 
+.titleContainer {
+  display: flex;
+  align-items: center;
+}
+
 .h2 {
-  color: black;
+  color: #6E6C6C;
   margin: 0;
   padding: 0;
   margin-left: 20px;
@@ -14,16 +19,21 @@
 
 .filterButtons {
   display: flex;
-  margin: 16px 0 16px 0;
+  margin: 8px 0 8px 0;
   margin-left: 28px;
 }
 
 .filterButtons button {
   background-color: white;
   border: 1px solid grey;
+  border-radius: 4px;
   padding: 1em;
   margin-right: 10px;
   width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
 
 .filterButtons button:hover {
@@ -56,65 +66,123 @@
 .cardscontainer {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 28px;
+    margin-right: 28px;
 }
 
 .cards {
-    width: 100%;
-    height: 400px;
-    margin: 10px 20px 10px 0;
-    border-radius: 12px;
-    padding: 1rem;
-    background-color: #efebe9;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.354);
-    transition: transform 0.2s ease;
-    display: flex;
-    flex-direction: column;
-  }
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 400px;
+  margin: 10px 40px 10px 0;
+  border-radius: 12px;
+  padding: 1rem;
+  color: #6E6C6C;
+  background-color: #efebe9;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.354);
+  transition: transform 0.2s ease;
+}
 
-  .imageWrapper {
+.imageWrapper {
     position: relative;
     width: 100%;
     height: 500px; 
-  }
-  
-  .projectImage {
+}
+
+.projectImage {
     object-fit: cover;
     border-radius: 8px;
+}
+
+.tags {
+  list-style: none;     
+  padding: 0;   
+  margin: 0;            
+  display: flex;        
+  gap: 0.5rem; 
+}
+
+.tags li {
+  background-color: #03756B;
+  border: 1px solid #6EACA7;
+  border-radius: 20px;
+  padding: 10px;
+  color:#ffffff;
+  font-size: 12px;
+}
+
+.links {
+  list-style: none;     
+  padding: 0;           
+  margin: 0; 
+  margin-top: 10px;           
+  display: flex;        
+  gap: 0.5rem; 
+}
+
+.seeMore {
+  color: rgb(255, 255, 255);
+  background-color: #F26C27;
+  border: 1px solid #AD4510;
+  padding: 12px 12px 12px 12px;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.gitHub {
+color: #6E6C6C;
+background-color: #ffffff;
+border: 1px solid #6E6C6C;
+padding: 12px 12px 12px 12px;
+margin-right: 10px;
+display: flex;
+align-items: center;
+border-radius: 4px;
+}
+
+.nogitHubUrl {
+  display: none;
+}
+
+
+
+
+@media (min-width: 768px) {
+  .cardscontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 28px;
+    margin-right: 28px;
   }
 
-  .tags {
-    list-style: none;     
-    padding: 0;           
-    margin: 0;            
-    display: flex;        
-    gap: 0.5rem; 
-  }
+.cards {
+  width: 30%;
+  margin: 12px 0 16px 0;
+  display: flex;
+  justify-content: space-between;
+}
 
-  .tags li {
-    background-color: rgba(255, 255, 255, 0.797);
-    border: 1px solid grey;
-    border-radius: 12px;
-    padding: 8px;
-  }
 
-  .links {
-    list-style: none;     
-    padding: 0;           
-    margin: 0;            
-    display: flex;        
-    gap: 0.5rem; 
-  }
+  
+  /* .cards {
+      width: 100%;
+      height: 400px;
+      margin: 10px 40px 10px 0;
+      border-radius: 12px;
+      padding: 1rem;
+      background-color: #efebe9;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.354);
+      transition: transform 0.2s ease;
+      display: flex;
+      flex-direction: column;
+    } */
 
-  .links li {
-    background-color: rgba(255, 255, 255, 0.797);
-    border: 1px solid grey;
-    padding: 8px;
-  }
 
-  @media (min-width: 768px) {
-    .cards {
-        width: 21%;
-    }
   }
 
 
