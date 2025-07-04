@@ -63,22 +63,4 @@ export const projects: Project[] = [
     shortDescription: "Project short description 5",
     githubUrl: "www.urlhere.com",
   },
-  {
-    id: "project-7",
-    name: "Project Name 7",
-    url: "/projects/project-2",
-    homepageImage: "/images/project-1.png",
-    tags: ["React", "Tailwind"],
-    shortDescription: "Project short description 5",
-    githubUrl: "www.urlhere.com",
-  },
-  {
-    id: "project-8",
-    name: "Project Name 8",
-    url: "/projects/project-2",
-    homepageImage: "/images/project-1.png",
-    tags: ["React", "Tailwind"],
-    shortDescription: "Project short description 5",
-    githubUrl: "www.urlhere.com",
-  },
 ];
