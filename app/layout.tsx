@@ -5,8 +5,9 @@ import Link from "next/link";
 import "./styles/globals.css";
 
 export const metadata = {
-  title: "My Blog",
-  description: "A simple Next.js blog",
+  title: "Sarah Hackett",
+  description:
+    "Sarah Hackett's portfolio website. You should hire her because she's amazing",
 };
 
 export default function RootLayout({
