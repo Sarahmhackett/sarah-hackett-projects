@@ -13,7 +13,7 @@ export const projects: Project[] = [
     id: "project-1",
     name: "Web Messenger Integration",
     url: "/projects/project-1",
-    homepageImage: "/images/project-1.png",
+    homepageImage: "/images/project-1-preview.png",
     tags: ["Work", "APIs", "Preact", "Javascript"],
     shortDescription:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim",

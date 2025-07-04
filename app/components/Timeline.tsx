@@ -72,17 +72,7 @@ export default function MyVerticalTimeline() {
         iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
       >
         <h3 className="vertical-timeline-element-title">Marketing Manager</h3>
-        <p className="vertical-timeline-element-subtitle">
-          <ul>
-            Manager roles:
-            <li>Proposition Marketing Manager</li>
-            <li>Commercial Marketing Manager</li>
-            <li>Game Content Marketing Manager</li>
-            Executive roles:
-            <li>Acquisiton & Media Executive</li>
-            <li>CRM Communications Executive</li>
-          </ul>
-        </p>
+        <p className="vertical-timeline-element-subtitle"></p>
       </VerticalTimelineElement>
 
       {/* More elements if needed */}

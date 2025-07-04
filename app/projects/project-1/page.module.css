@@ -1,0 +1,12 @@
+.headerArea {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color: #229880;
+}
+
+.titleContainer {
+    display: flex;
+    justify-content:center;
+
+}
