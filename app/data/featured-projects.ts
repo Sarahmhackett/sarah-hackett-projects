@@ -38,7 +38,7 @@ export const projects: Project[] = [
   },
   {
     id: "project-3",
-    name: "Figma Design Systems",
+    name: "Figma Design Systems and Storybook",
     url: "../../public/images/project-3",
     homepageImage: "/images/project-3-preview.png",
     tags: ["Work", "Figma", "Design Systems", "Storybook", "SCSS"],
